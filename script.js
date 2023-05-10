@@ -9,3 +9,8 @@ document.getElementById('registrationForm').addEventListener('submit', function(
   // Redirect to another page
   window.location.href = 'hello.html';
 });
+// Retrieve email from localStorage
+var email = localStorage.getItem('email');
+
+// Display username on the page
+document.getElementById('username').textContent = email;
